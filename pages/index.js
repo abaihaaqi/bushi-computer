@@ -21,7 +21,7 @@ export default function Home() {
           id="top"
           className="relative aspect-[3/4] md:aspect-auto md:h-[432px] bg-fixed bg-center bg-cover bg-no-repeat scroll-mt-[50px]"
           style={{
-            backgroundImage: "url(/image/banner.jpg)",
+            backgroundImage: "url(/image/banner.png)",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             backgroundBlendMode: "multiply",
           }}
