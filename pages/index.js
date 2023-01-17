@@ -37,13 +37,18 @@ export default function Home() {
             </div>
             <hr className="my-4" />
             <div className="flex justify-center">
-              <button className="bg-green-600 p-3 rounded-lg">
+              <a
+                href="https://wa.me/6285624200502?text=Halo%2C%20saya%20mau%20servis%20dong"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 p-3 rounded-lg"
+              >
                 <Image
                   src={WhatsappImage}
                   alt="Whatsapp Image button"
                   height={24}
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -120,13 +125,18 @@ export default function Home() {
             Bebas konsultasi, kontak kami sekarang
           </h1>
           <div className="flex justify-center">
-            <button className="bg-green-600 p-3 rounded-lg">
+            <a
+              href="https://wa.me/6285624200502?text=Halo%2C%20saya%20mau%20servis%20dong"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 p-3 rounded-lg"
+            >
               <Image
                 src={WhatsappImage}
                 alt="Whatsapp Image button"
                 height={24}
               />
-            </button>
+            </a>
           </div>
         </div>
         <h1 id="products" className="text-center scroll-mt-[50px]">
@@ -205,19 +215,32 @@ export default function Home() {
             menutup kemungkinan untuk membuka cabang di kota lain.
           </p>
           <div className="flex justify-center mb-3">
-            <button className="bg-green-600 p-3 rounded-lg">
+            <a
+              href="https://wa.me/6285624200502?text=Halo%2C%20saya%20mau%20servis%20dong"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 p-3 rounded-lg"
+            >
               <Image
                 src={WhatsappImage}
                 alt="Whatsapp Image button"
                 height={24}
               />
-            </button>
+            </a>
           </div>
           <div className="flex justify-center gap-4">
-            <a>
+            <a
+              href="https://www.instagram.com/bushi.computer/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconBrandInstagram size={32} />
             </a>
-            <a>
+            <a
+              href="https://www.tiktok.com/@bushi.computer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconBrandTiktok size={32} />
             </a>
           </div>
