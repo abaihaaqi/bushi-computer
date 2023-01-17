@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Layout from "../layout";
-import ProcieImage from "../public/image/procie.jpg";
-import RamImage from "../public/image/ram.jpg";
-import LotofRamImage from "../public/image/lot-of-ram.jpg";
+import ProcieImage from "../public/image/procie.png";
+import RamImage from "../public/image/ram.png";
+import LotofRamImage from "../public/image/lot-of-ram.png";
 import WhatsappImage from "../public/image/whatsapp.png";
-import FlexCableimage from "../public/image/flex-cable.jpg";
-import HoldProcieImage from "../public/image/hold-procie.jpg";
-import TouchpadImage from "../public/image/touchpad.jpg";
+import FlexCableimage from "../public/image/flex-cable.png";
+import HoldProcieImage from "../public/image/hold-procie.png";
+import TouchpadImage from "../public/image/touchpad.png";
 import {
   IconBrandInstagram,
   IconBrandTiktok,
