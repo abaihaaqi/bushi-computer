@@ -26,7 +26,7 @@ export default function Home() {
             backgroundBlendMode: "multiply",
           }}
         >
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-zinc-900 p-3 rounded-xl">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-zinc-200 dark:bg-zinc-900 p-3 rounded-xl">
             <div className="bg-fuchsia-400 dark:bg-slate-700 p-4 rounded-t-xl rounded-r-xl mb-3 shadow-lg w-max">
               <h1 className="mb-0">Servis Komputer?</h1>
             </div>
