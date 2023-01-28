@@ -7,36 +7,79 @@ import WhatsappImage from "../public/image/whatsapp.png";
 import FlexCableimage from "../public/image/flex-cable.png";
 import HoldProcieImage from "../public/image/hold-procie.png";
 import TouchpadImage from "../public/image/touchpad.png";
-import {
-  IconBrandInstagram,
-  IconBrandTiktok,
-  IconBrandWhatsapp,
-} from "@tabler/icons";
+import { IconBrandInstagram, IconBrandTiktok } from "@tabler/icons";
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Layout>
-      <div>
+      <Head>
+        <title>Bushi Computer</title>
+
+        <meta name="apple-mobile-web-app-title" content="Bushi Computer" />
+        <meta name="description" content="Toko servis komputer di Kota Bandung" />
+        <meta name="keywords" content="komputer, laptop, servis, bandung, ram, ssd, hdd, windows, linux, rusak" />
+        <meta name="author" content="Nizar Baihaqi" />
+        <meta name="publisher" content="Nizar Baihaqi" />
+        <meta name="theme-color" content='#000000' />
+        <meta name="color-scheme" content='dark' />
+
+        <meta itemProp="name" content="Bushi Computer"/>
+        <meta name="google-site-verification" content="cKGmdlxFixAj5un3xVbpDZ0nn_Fprvr2Xh6S7qjiFP4" />
+        <meta itemProp="description" content="Toko servis komputer di Kota Bandung"/>
+        <meta itemProp="image" content="/logo/white.png"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@abaihaaqi"/>
+        <meta name="twitter:creator" content="@abaihaaqi"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png"/>
+        <link rel="manifest" href="/icon/site.webmanifest"/>
+      </Head>
+      <div className="overflow-hidden">
         <div
           id="top"
-          className="relative aspect-[3/4] md:aspect-auto md:h-[432px] bg-fixed bg-center bg-cover bg-no-repeat scroll-mt-[50px]"
+          className="relative aspect-[3/4] md:aspect-auto md:h-[432px] bg-fixed bg-center bg-cover bg-no-repeat scroll-mt-[50px] flex justify-center items-center"
           style={{
             backgroundImage: "url(/image/banner.png)",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             backgroundBlendMode: "multiply",
           }}
         >
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-zinc-200 dark:bg-zinc-900 p-3 rounded-xl">
-            <div className="bg-fuchsia-400 dark:bg-slate-700 p-4 rounded-t-xl rounded-r-xl mb-3 shadow-lg w-max">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-zinc-200 dark:bg-zinc-900 p-3 rounded-xl"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0, x: "-50%", y: "50%" }}
+              animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="bg-fuchsia-400 dark:bg-slate-700 p-4 rounded-t-xl rounded-r-xl mb-3 shadow-lg w-max"
+            >
               <h1 className="mb-0">Servis Komputer?</h1>
-            </div>
-            <div className="flex justify-end">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0, x: "50%", y: "50%" }}
+              animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
+              className="flex justify-end"
+            >
               <div className="bg-teal-400 dark:bg-stone-700 px-4 py-2 rounded-t-xl rounded-l-xl shadow-lg">
                 <h2 className="mb-0">Disini aja!</h2>
               </div>
-            </div>
+            </motion.div>
             <hr className="my-4" />
-            <div className="flex justify-center">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 2.3 }}
+              className="flex justify-center"
+            >
               <a
                 href="https://wa.me/6285624200502?text=Halo%2C%20saya%20mau%20servis%20dong"
                 target="_blank"
@@ -49,12 +92,18 @@ export default function Home() {
                   height={24}
                 />
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-        <div
+        <div className="absolute inset-x-0 -z-10 text-center mt-4">
+          Scroll down
+        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ margin: "0px 0px -200px 0px" }}
           id="whyus"
-          className="p-4 md:flex items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl scroll-mt-[50px]"
+          className="p-4 md:flex justify-center items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl scroll-mt-[50px]"
         >
           <div className="relative aspect-square h-[160px] md:h-[200px] mx-auto md:mx-0 mb-3 md:mb-0">
             <Image
@@ -77,8 +126,13 @@ export default function Home() {
               banyak yang meminta untuk servis milik mereka.
             </p>
           </div>
-        </div>
-        <div className="p-4 md:flex items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ margin: "0px 0px -200px 0px" }}
+          className="p-4 md:flex items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl"
+        >
           <div className="relative aspect-square h-[160px] md:h-[200px] mx-auto md:mx-0 mb-3 md:mb-0">
             <Image
               src={RamImage}
@@ -98,8 +152,13 @@ export default function Home() {
               Kami menjamin garansi 1 bulan untuk semua jasa yang kami berikan.
             </p>
           </div>
-        </div>
-        <div className="p-4 md:flex items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ margin: "0px 0px -200px 0px" }}
+          className="p-4 md:flex items-center gap-4 max-w-screen-md lg:mx-auto md:bg-zinc-200 md:dark:bg-zinc-900 md:m-4 md:rounded-xl"
+        >
           <div className="relative aspect-square h-[160px] md:h-[200px] mx-auto md:mx-0 mb-3 md:mb-0">
             <Image
               src={LotofRamImage}
@@ -119,8 +178,13 @@ export default function Home() {
               Kamu bisa membawa sendiri komponen yang ingin dipasang / dirakit.
             </p>
           </div>
-        </div>
-        <div className="h-screen flex flex-col justify-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ margin: "0px 0px -200px 0px" }}
+          className="my-20 flex flex-col justify-center"
+        >
           <h1 className="text-center">
             Bebas konsultasi, kontak kami sekarang
           </h1>
@@ -138,12 +202,23 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
-        <h1 id="products" className="text-center scroll-mt-[50px]">
-          Jasa yang kami sediakan
-        </h1>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ margin: "0px 0px -200px 0px" }}
+        >
+          <h1 id="products" className="text-center scroll-mt-[50px]">
+            Jasa yang kami sediakan
+          </h1>
+        </motion.div>
         <div className="md:grid grid-cols-3 max-w-screen-md mx-auto">
-          <div className="p-4">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ margin: "0px 0px -200px 0px" }}
+            className="p-4"
+          >
             <div className="relative aspect-square mb-4">
               <Image
                 src={FlexCableimage}
@@ -158,8 +233,13 @@ export default function Home() {
               />
             </div>
             <h2 className="mb-0">Servis kerusakan komputer / laptop</h2>
-          </div>
-          <div className="p-4">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ margin: "0px 0px -200px 0px" }}
+            className="p-4"
+          >
             <div className="relative aspect-square mb-4">
               <Image
                 src={HoldProcieImage}
@@ -174,8 +254,13 @@ export default function Home() {
               />
             </div>
             <h2 className="mb-0">Upgrade part komputer / laptop</h2>
-          </div>
-          <div className="p-4">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ margin: "0px 0px -200px 0px" }}
+            className="p-4"
+          >
             <div className="relative aspect-square mb-4">
               <Image
                 src={TouchpadImage}
@@ -190,7 +275,7 @@ export default function Home() {
               />
             </div>
             <h2 className="mb-0">Rakit Komputer</h2>
-          </div>
+          </motion.div>
           <div className="md:hidden">
             <h3 className="ml-4">Lainnya :</h3>
             <ul>

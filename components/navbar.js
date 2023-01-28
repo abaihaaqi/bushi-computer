@@ -18,7 +18,15 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 export default function Navbar() {
   const [logoFile, setLogoFile] = useState(logoWhite);
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true)
+    theme == "light" ? setLogoFile(logoBlack) : setLogoFile(logoWhite)
+  }, []);
+
+  if (!mounted) return null
 
   const changeTheme = () => {
     if (theme == "light") {
@@ -27,10 +35,6 @@ export default function Navbar() {
       setTheme("light");
     }
   };
-
-  useEffect(() => {
-    theme == "light" ? setLogoFile(logoBlack) : setLogoFile(logoWhite);
-  }, [theme]);
 
   return (
     <>
