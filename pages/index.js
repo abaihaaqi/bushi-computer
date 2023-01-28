@@ -18,26 +18,48 @@ export default function Home() {
         <title>Bushi Computer</title>
 
         <meta name="apple-mobile-web-app-title" content="Bushi Computer" />
-        <meta name="description" content="Toko servis komputer di Kota Bandung" />
-        <meta name="keywords" content="komputer, laptop, servis, bandung, ram, ssd, hdd, windows, linux, rusak" />
+        <meta
+          name="description"
+          content="Toko servis komputer di Kota Bandung"
+        />
+        <meta
+          name="keywords"
+          content="komputer, laptop, servis, bandung, ram, ssd, hdd, windows, linux, rusak"
+        />
         <meta name="author" content="Nizar Baihaqi" />
         <meta name="publisher" content="Nizar Baihaqi" />
-        <meta name="theme-color" content='#000000' />
-        <meta name="color-scheme" content='dark' />
+        <meta name="theme-color" content="#000000" />
+        <meta name="color-scheme" content="dark" />
 
-        <meta itemProp="name" content="Bushi Computer"/>
-        <meta name="google-site-verification" content="cKGmdlxFixAj5un3xVbpDZ0nn_Fprvr2Xh6S7qjiFP4" />
-        <meta itemProp="description" content="Toko servis komputer di Kota Bandung"/>
-        <meta itemProp="image" content="/logo/white.png"/>
+        <meta itemProp="name" content="Bushi Computer" />
+        <meta
+          itemProp="description"
+          content="Toko servis komputer di Kota Bandung"
+        />
+        <meta property="og:image" itemProp="image" content="logo/white.png" />
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@abaihaaqi"/>
-        <meta name="twitter:creator" content="@abaihaaqi"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@abaihaaqi" />
+        <meta name="twitter:creator" content="@abaihaaqi" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png"/>
-        <link rel="manifest" href="/icon/site.webmanifest"/>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/icon/site.webmanifest" />
       </Head>
       <div className="overflow-hidden">
         <div
