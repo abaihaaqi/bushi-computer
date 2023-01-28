@@ -36,17 +36,26 @@ export default function Home() {
           itemProp="description"
           content="Toko servis komputer di Kota Bandung"
         />
-        <meta itemProp="image" content="logo/white.png" />
+        <meta
+          itemProp="image"
+          content="https://bushi.nizarbaihaqi.com/logo/white.png"
+        />
 
-        <meta property="og:title" content="Bushi Computer"/>
-        <meta property="og:description" content="Toko servis komputer di Kota Bandung"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://bushi.nizarbaihaqi.com"/>
-        <meta property="og:image" content="logo/white.png"/>
-        <meta property="og:image:width" content={1200}/>
-        <meta property="og:image:height" content={1200}/>
-        <meta property="og:site_name" content="Bushi Computer"/>
-        <meta property="og:locale" content={'id_ID'}/>
+        <meta property="og:title" content="Bushi Computer" />
+        <meta
+          property="og:description"
+          content="Toko servis komputer di Kota Bandung"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bushi.nizarbaihaqi.com" />
+        <meta
+          property="og:image"
+          content="https://bushi.nizarbaihaqi.com/logo/white.png"
+        />
+        <meta property="og:image:width" content={1200} />
+        <meta property="og:image:height" content={1200} />
+        <meta property="og:site_name" content="Bushi Computer" />
+        <meta property="og:locale" content={"id_ID"} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@abaihaaqi" />
